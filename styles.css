@@ -50,7 +50,7 @@ img[alt="menu"] {
         text-align: center;
         border: 1px solid black;
         border-radius: 10px;
-        font-size: 18px;
+        font-size: 22px;
         z-index: 1;
     }
 
@@ -81,7 +81,7 @@ img[alt="menu"] {
         text-align: center;
         border: 1px solid black;
         border-radius: 10px;
-        font-size: 18px;
+        font-size: 22px;
         z-index: 1;
     }
 
@@ -112,7 +112,7 @@ img[alt="menu"] {
         text-align: center;
         border: 1px solid black;
         border-radius: 10px;
-        font-size: 18px;
+        font-size: 22px;
         z-index: 1;
     }
 
@@ -373,6 +373,7 @@ img[alt="background-person"] {
 
 .offer p {
     width: 96%;
+    font-size: 17px
 }
 
 /* Cards media query */
@@ -481,6 +482,7 @@ img[alt="offer-img"] {
 
 @media screen and (max-width: 992px) and (min-width:786px) {
     img[alt="offer-img"] {
+        padding-top: 10px;
         width: 98%;
     }
 
@@ -491,6 +493,7 @@ img[alt="offer-img"] {
 
 @media screen and (max-width: 786px) and (min-width:600px) {
     img[alt="offer-img"] {
+        padding-top: 10px;
         width: 99%;
     }
 
@@ -501,6 +504,7 @@ img[alt="offer-img"] {
 
 @media screen and (max-width: 600px) {
     img[alt="offer-img"] {
+        padding-top: 10px;
         width: 100%;
     }
 
@@ -521,6 +525,10 @@ img[alt="offer-img"] {
     row-gap: 15px;
 }
 
+.training p{
+    font-size: 17px;
+}
+
 img[alt="training"] {
     border-radius: 8px;
 }
@@ -533,7 +541,9 @@ img[alt="training"] {
         justify-content: center;
 
     }
-
+    .training p{
+        font-size: 21px;
+    }
     img[alt="training"] {
         width: 100%;
     }
@@ -549,6 +559,9 @@ img[alt="training"] {
     img[alt="training"] {
         width: 100%;
     }
+    .training p{
+        font-size: 21px;
+    }
 }
 
 @media screen and (max-width: 786px) and (min-width:600px) {
@@ -559,6 +572,9 @@ img[alt="training"] {
 
     img[alt="training"] {
         width: 100%;
+    }
+    .training p{
+        font-size: 21px;
     }
 }
 
@@ -622,7 +638,7 @@ img[alt="training"] {
 }
 
 .see-more-div>a {
-    font-size: 20px;
+    font-size: 22px;
     color: rgb(39, 76, 146);
     font-weight: 600;
     text-decoration: none;
@@ -653,7 +669,7 @@ button[name="join-club"] {
     .card {
         width: 45%;
         padding: 70px;
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .card>p {
@@ -669,7 +685,7 @@ button[name="join-club"] {
     .card {
         width: 44%;
         padding: 75px;
-        font-size: 21px;
+        font-size: 22px;
     }
 
     .card>p {
@@ -686,7 +702,7 @@ button[name="join-club"] {
     .card {
         width: 100%;
         padding: 75px;
-        font-size: 21px;
+        font-size: 22px;
     }
 
     .card>p {
@@ -706,7 +722,7 @@ button[name="join-club"] {
     .card {
         padding: 60px;
         width: 100%;
-        font-size: 21px;
+        font-size: 22px;
     }
 
     .card>p {
