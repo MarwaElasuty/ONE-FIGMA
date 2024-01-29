@@ -12,12 +12,17 @@ nav {
     justify-content: space-between;
     padding: 50px;
     position: relative;
+    align-items: center;
 }
 
 nav ul {
     display: flex;
     column-gap: 15px;
     list-style-type: none;
+}
+
+nav h2{
+    font-size: 27px;
 }
 
 img[alt="menu"] {
@@ -31,6 +36,12 @@ img[alt="menu"] {
 @media screen and (max-width: 1200px) and (min-width:992px) {
     img[alt="menu"] {
         display: none;
+    }
+
+    ul li {
+        padding: 25px;
+        background-color: white;
+        color: black;
     }
 }
 
@@ -47,13 +58,13 @@ img[alt="menu"] {
         position: absolute;
         top: 68px;
         right: 20px;
-        background-color: white;
-        padding: 65px;
+        padding: 80px;
         text-align: center;
-        border: 1px solid black;
-        border-radius: 10px;
-        font-size: 22px;
+        border: 2px solid white;
+        border-radius: 28px;
+        font-size: 37px;
         z-index: 1;
+        font-weight: 500;
     }
 
     nav ul {
@@ -61,8 +72,10 @@ img[alt="menu"] {
     }
 
     ul li {
-        padding-bottom: 10px;
-    }
+        padding: 25px;
+        background-color: white;
+        color: black;
+        }
 }
 
 @media screen and (max-width: 786px) and (min-width:600px) {
@@ -78,13 +91,13 @@ img[alt="menu"] {
         position: absolute;
         top: 68px;
         right: 20px;
-        background-color: white;
-        padding: 65px;
+        padding: 80px;
         text-align: center;
-        border: 1px solid black;
-        border-radius: 10px;
-        font-size: 22px;
+        border: 2px solid white;
+        border-radius: 28px;
+        font-size: 37px;
         z-index: 1;
+        font-weight: 500;
     }
 
     nav ul {
@@ -92,8 +105,10 @@ img[alt="menu"] {
     }
 
     ul li {
-        padding-bottom: 10px;
-    }
+        padding: 25px;
+        background-color: white;
+        color: black;
+        }
 }
 
 @media screen and (max-width: 600px) {
@@ -109,13 +124,13 @@ img[alt="menu"] {
         position: absolute;
         top: 68px;
         right: 20px;
-        background-color: white;
-        padding: 65px;
+        padding: 80px;
         text-align: center;
-        border: 1px solid black;
-        border-radius: 10px;
-        font-size: 22px;
+        border: 2px solid white;
+        border-radius: 28px;
+        font-size: 37px;
         z-index: 1;
+        font-weight: 500;
     }
 
     nav ul {
@@ -123,8 +138,10 @@ img[alt="menu"] {
     }
 
     ul li {
-        padding-bottom: 10px;
-    }
+        padding: 25px;
+        background-color: white;
+        color: black;
+        }
 }
 
 .background-content {
@@ -139,7 +156,8 @@ img[alt="menu"] {
 
 .intro {
     text-align: left;
-    padding: 70px;
+    margin: auto;
+    padding: 6px;
 }
 
 .intro>h1 {
@@ -156,6 +174,16 @@ img[alt="menu"] {
     font-size: 19px;
 }
 
+
+.background-img-div {
+    position: absolute;
+    top: 136px;
+    right: 168px;
+}
+
+img[alt="background-person"] {
+    width: 340px;
+}
 
 /* intro media query */
 @media screen and (max-width: 1200px) and (min-width:992px) {
@@ -253,14 +281,15 @@ button[name="join-btn"] {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 
-img[alt="background-person"] {
+/* img[alt="background-person"] {
     width: 302px;
     position: absolute;
     right: 225px;
     top: 56px;
-}
+} */
 
 
 
@@ -292,21 +321,6 @@ img[alt="background-person"] {
 
 /* background content media query */
 
-@media screen and (min-width: 1200px) {
-
-    img[alt="background-person"] {
-        width: 294px;
-    }
-
-    /* button[name="join-btn"] {
-        display: flex;
-        margin-left: 40px;
-        margin: auto;
-
-    } */
-
-}
-
 
 
 @media screen and (max-width: 1200px) and (min-width:992px) {
@@ -329,8 +343,13 @@ img[alt="background-person"] {
         right: 71px;
     }
 
+    .background-img-div {
+        right: 64px;
+        top: 313px;
+    }
+
     img[alt="background-person"] {
-        position: unset;
+        width: 263px;
     }
 
     .join-club-btn-div {
@@ -366,7 +385,12 @@ img[alt="background-person"] {
     }
 
     img[alt="background-person"] {
-        position: unset;
+        width: 263px;
+    }
+
+    .background-img-div {
+        right: 64px;
+        top: 313px;
     }
 
     .join-club-btn-div {
@@ -408,7 +432,12 @@ img[alt="background-person"] {
     }
 
     img[alt="background-person"] {
-        position: unset;
+        width: 263px;
+    }
+
+    .background-img-div {
+        right: 64px;
+        top: 313px;
     }
 
     .join-club-btn-div {
@@ -441,8 +470,10 @@ img[alt="background-person"] {
         margin: auto;
     }
 
+    .background-img-div {}
+
     img[alt="background-person"] {
-        position: unset;
+        width: 263px;
     }
 
     .join-club-btn-div {
@@ -911,10 +942,12 @@ button[name="join-club"] {
     .see-more-div {
         width: 100%;
     }
-    .membership h2{
+
+    .membership h2 {
         font-size: 67px;
     }
-    .membership-cards h2{
+
+    .membership-cards h2 {
         font-size: 50px;
     }
 }
@@ -943,10 +976,12 @@ button[name="join-club"] {
     .see-more-div>a {
         font-size: 35px;
     }
-    .membership h2{
+
+    .membership h2 {
         font-size: 67px;
     }
-    .membership-cards h2{
+
+    .membership-cards h2 {
         font-size: 50px;
     }
 }
@@ -973,10 +1008,12 @@ button[name="join-club"] {
     .see-more-div {
         width: 100%;
     }
-    .membership h2{
+
+    .membership h2 {
         font-size: 67px;
     }
-    .membership-cards h2{
+
+    .membership-cards h2 {
         font-size: 50px;
     }
 }
@@ -1004,10 +1041,11 @@ button[name="join-club"] {
         width: 100%;
     }
 
-    .membership h2{
+    .membership h2 {
         font-size: 67px;
     }
-    .membership-cards h2{
+
+    .membership-cards h2 {
         font-size: 50px;
     }
 
