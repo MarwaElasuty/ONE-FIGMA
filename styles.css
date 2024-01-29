@@ -3,12 +3,14 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    background-color: rgb(37, 37, 37);
+    color: white;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 25px;
+    padding: 50px;
     position: relative;
 }
 
@@ -135,23 +137,111 @@ img[alt="menu"] {
 
 }
 
-.background-content h1 {
+.intro {
+    text-align: left;
+    padding: 70px;
+}
+
+.intro>h1 {
+    font-size: 120px;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.intro>p {
+    text-align: left;
+    width: 42%;
+    margin: auto;
+    font-size: 19px;
+}
+
+
+/* intro media query */
+@media screen and (max-width: 1200px) and (min-width:992px) {
+    .intro>h1 {
+        font-size: 63px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .intro>p {
+        text-align: left;
+        width: 78%;
+        margin: auto;
+        font-size: 39px;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width:786px) {
+    .intro>h1 {
+        font-size: 63px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .intro>p {
+        text-align: left;
+        width: 78%;
+        margin: auto;
+        font-size: 39px;
+    }
+}
+
+@media screen and (max-width: 786px) and (min-width:600px) {
+    .intro>h1 {
+        font-size: 63px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .intro>p {
+        text-align: left;
+        width: 78%;
+        margin: auto;
+        font-size: 39px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .intro>h1 {
+        font-size: 63px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .intro>p {
+        text-align: left;
+        width: 78%;
+        margin: auto;
+        font-size: 39px;
+    }
+}
+
+
+/* .background-content h1 {
     font-weight: 700;
     font-size: 99px;
     width: 47%;
     margin: auto;
-}
+} */
 
-.background-side-text {
+/* .background-side-text {
     width: 49%;
-    padding: 13px;
-    margin: auto;
+    padding: 19px;
+    text-align: left;
     font-size: 20px;
+} */
+
+.join-club-btn-div {
+    width: 42%;
+    margin: auto;
+    padding-top: 25px;
 }
 
 button[name="join-btn"] {
     padding: 20px;
-    margin: 10px;
+    /* margin: 10px; */
     border-radius: 20px;
     border-style: none;
     background-color: #f46632;
@@ -161,6 +251,8 @@ button[name="join-btn"] {
 
 .content {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 img[alt="background-person"] {
@@ -178,7 +270,7 @@ img[alt="background-person"] {
 
 
 .sponsors {
-    padding: 40px;
+    padding: 75px;
 }
 
 #sponsor-title {
@@ -206,12 +298,12 @@ img[alt="background-person"] {
         width: 294px;
     }
 
-    button[name="join-btn"] {
+    /* button[name="join-btn"] {
         display: flex;
         margin-left: 40px;
         margin: auto;
 
-    }
+    } */
 
 }
 
@@ -220,10 +312,10 @@ img[alt="background-person"] {
 @media screen and (max-width: 1200px) and (min-width:992px) {
     .background-content {}
 
-    .background-content h1 {
+    /* .background-content h1 {
         width: 55%;
         font-size: 80px;
-    }
+    } */
 
     .background-side-text {
         width: 65%;
@@ -241,6 +333,16 @@ img[alt="background-person"] {
         position: unset;
     }
 
+    .join-club-btn-div {
+        width: 78%;
+        margin: auto;
+        padding-top: 25px;
+    }
+
+    button[name="join-btn"] {
+        font-size: 30px;
+    }
+
 }
 
 @media screen and (max-width: 992px) and (min-width:786px) {
@@ -249,10 +351,10 @@ img[alt="background-person"] {
         flex-wrap: wrap;
     }
 
-    .background-content h1 {
+    /* .background-content h1 {
         width: 67%;
         font-size: 81px;
-    }
+    } */
 
     .background-side-text {
         margin: auto;
@@ -267,6 +369,15 @@ img[alt="background-person"] {
         position: unset;
     }
 
+    .join-club-btn-div {
+        width: 78%;
+        margin: auto;
+        padding-top: 25px;
+    }
+
+    button[name="join-btn"] {
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 786px) and (min-width:600px) {
@@ -282,10 +393,10 @@ img[alt="background-person"] {
         text-align: center;
     }
 
-    .background-content h1 {
+    /* .background-content h1 {
         width: 86%;
         font-size: 80px;
-    }
+    } */
 
     .background-side-text {
         margin: auto;
@@ -298,6 +409,16 @@ img[alt="background-person"] {
 
     img[alt="background-person"] {
         position: unset;
+    }
+
+    .join-club-btn-div {
+        width: 78%;
+        margin: auto;
+        padding-top: 25px;
+    }
+
+    button[name="join-btn"] {
+        font-size: 30px;
     }
 }
 
@@ -306,10 +427,10 @@ img[alt="background-person"] {
         flex-wrap: wrap;
     }
 
-    .background-content h1 {
+    /* .background-content h1 {
         width: 100%;
         font-size: 80px;
-    }
+    } */
 
     .background-side-text {
         margin: auto;
@@ -322,6 +443,16 @@ img[alt="background-person"] {
 
     img[alt="background-person"] {
         position: unset;
+    }
+
+    .join-club-btn-div {
+        width: 78%;
+        margin: auto;
+        padding-top: 25px;
+    }
+
+    button[name="join-btn"] {
+        font-size: 30px;
     }
 }
 
@@ -335,7 +466,7 @@ img[alt="background-person"] {
     font-size: 20px;
 }
 
-.start > h2{
+.start>h2 {
     font-size: 30px;
 }
 
@@ -350,6 +481,11 @@ img[alt="background-person"] {
 #card-text {
     display: flex;
     justify-content: space-evenly;
+    background-color: #40414a;
+}
+
+#card-text>p {
+    background-color: #40414a;
 }
 
 
@@ -359,7 +495,8 @@ img[alt="background-person"] {
     text-align: center;
     width: 22%;
     margin-top: 15px;
-    background-color: rgb(115, 177, 178);
+    background-color: #40414a;
+    ;
     border-style: none;
     border-radius: 20px;
     font-size: 17px;
@@ -368,12 +505,18 @@ img[alt="background-person"] {
 
 .card-content>h3 {
     padding-bottom: 15px;
-    font-size: 25px;
+    font-size: 22px;
+    background-color: #40414a;
 }
 
 .offer p {
-    width: 96%;
-    font-size: 17px
+    width: 70%;
+    font-size: 17px;
+    margin: auto;
+}
+
+.offer h2 {
+    font-size: 43px;
 }
 
 /* Cards media query */
@@ -395,16 +538,27 @@ img[alt="background-person"] {
     .offer p {
         width: 100%;
     }
+
+    .start>h2 {
+        font-size: 50px;
+    }
+
+    .see-more-div>a {
+        font-size: 39px;
+    }
 }
 
 @media screen and (max-width: 992px) and (min-width:786px) {
     #card-text>p {
         width: 90%;
+        font-size: 41px;
     }
 
     .card-content {
-        width: 48%;
+        width: 86%;
         font-size: 20px;
+        padding: 110px;
+        margin-bottom: 27px;
 
     }
 
@@ -414,6 +568,14 @@ img[alt="background-person"] {
 
     .offer p {
         width: 100%;
+    }
+
+    .start>h2 {
+        font-size: 50px;
+    }
+
+    .see-more-div>a {
+        font-size: 39px;
     }
 }
 
@@ -435,6 +597,16 @@ img[alt="background-person"] {
     .offer p {
         width: 100%;
     }
+
+    .start>h2 {
+        font-size: 50px;
+    }
+
+    .see-more-div>a {
+        font-size: 39px;
+    }
+
+
 }
 
 @media screen and (max-width: 600px) {
@@ -448,25 +620,35 @@ img[alt="background-person"] {
 
     }
 
-    .offer h2{
+    .offer h2 {
         font-size: 30px;
     }
+
     .offer p {
         width: 100%;
         font-size: 21px;
+    }
+
+    .start>h2 {
+        font-size: 50px;
+    }
+
+    .see-more-div>a {
+        font-size: 39px;
     }
 }
 
 .offer {
     display: flex;
     flex-wrap: nowrap;
-    padding: 25px;
+    padding: 69px;
     text-align: center;
     align-items: center;
 }
 
 img[alt="offer-img"] {
     border-radius: 8px;
+    width: 550px;
 }
 
 /* offer media query */
@@ -482,7 +664,7 @@ img[alt="offer-img"] {
 
 @media screen and (max-width: 992px) and (min-width:786px) {
     img[alt="offer-img"] {
-        padding-top: 10px;
+        padding-top: 62px;
         width: 98%;
     }
 
@@ -516,17 +698,22 @@ img[alt="offer-img"] {
 .training {
     display: flex;
     flex-wrap: nowrap;
-    padding: 25px;
-    padding-bottom: 80px;
-    padding-top: 40px;
+    padding: 38px;
     text-align: center;
     align-items: center;
-    column-gap: 36px;
-    row-gap: 15px;
+    column-gap: 95px;
+    row-gap: 38px;
 }
 
-.training p{
-    font-size: 17px;
+.training p {
+    font-size: 19px;
+    text-align: left;
+    padding-top: 25px;
+}
+
+.training h3 {
+    font-size: 34px;
+    text-align: left;
 }
 
 img[alt="training"] {
@@ -541,9 +728,11 @@ img[alt="training"] {
         justify-content: center;
 
     }
-    .training p{
+
+    .training p {
         font-size: 21px;
     }
+
     img[alt="training"] {
         width: 100%;
     }
@@ -559,7 +748,8 @@ img[alt="training"] {
     img[alt="training"] {
         width: 100%;
     }
-    .training p{
+
+    .training p {
         font-size: 21px;
     }
 }
@@ -573,7 +763,8 @@ img[alt="training"] {
     img[alt="training"] {
         width: 100%;
     }
-    .training p{
+
+    .training p {
         font-size: 21px;
     }
 }
@@ -587,17 +778,17 @@ img[alt="training"] {
         width: 100%;
     }
 
-    .training p{
+    .training p {
         font-size: 21px;
     }
 
-    .training h3{
+    .training h3 {
         font-size: 25px;
     }
 }
 
 .membership {
-    padding: 15px;
+    padding: 51px;
     text-align: center;
 }
 
@@ -613,9 +804,13 @@ img[alt="training"] {
     text-align: center;
 }
 
+.membership-cards p {
+    background-color: #40414a;
+}
+
 .card {
-    width: 42%;
-    background-color: rgb(133, 133, 133);
+    width: 34%;
+    background-color: #40414a;
     padding: 70px;
     color: white;
     font-size: 17px;
@@ -625,21 +820,53 @@ img[alt="training"] {
     width: 100%;
     text-align: left;
     padding-top: 20px;
+    background-color: #40414a;
+}
+
+.card li {
+    background-color: #40414a;
 }
 
 .card>h2 {
     text-align: center;
+    background-color: #40414a;
 }
 
 .see-more-div {
     padding-top: 30px;
     display: flex;
-    padding-left: 14px;
+    margin: auto;
+    width: 69%;
 }
+
+.see-more-div-membership {
+    padding-top: 103px;
+    display: flex;
+    margin: auto;
+    background-color: #40414a;
+}
+
+
+.see-more-div-membership>a {
+    font-size: 22px;
+    color: rgb(56 98 179);
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #40414a;
+}
+
+
+.join-club-div {
+    padding-top: 30px;
+    display: flex;
+    margin: auto;
+    background-color: #40414a;
+}
+
 
 .see-more-div>a {
     font-size: 22px;
-    color: rgb(39, 76, 146);
+    color: rgb(56 98 179);
     font-weight: 600;
     text-decoration: none;
 }
@@ -647,20 +874,21 @@ img[alt="training"] {
 img[alt="right-arrow"] {
     padding-left: 15px;
     padding-bottom: 5px;
+    background-color: #40414a;
 }
 
 img[alt="right-black-arrow"] {
     padding-left: 15px;
-    padding-bottom: 5px;
 }
 
 button[name="join-club"] {
-    padding: 10px;
-    background-color: rgb(39, 76, 146);
+    padding: 7px;
+    background-color: rgb(56 98 179);
     border-radius: 13px;
     border-style: none;
     color: white;
     font-size: 16px;
+    width: 150px;
 }
 
 
@@ -679,13 +907,24 @@ button[name="join-club"] {
     button[name="join-club"] {
         font-size: 17px;
     }
+
+    .see-more-div {
+        width: 100%;
+    }
+    .membership h2{
+        font-size: 67px;
+    }
+    .membership-cards h2{
+        font-size: 50px;
+    }
 }
 
 @media screen and (max-width: 992px) and (min-width:786px) {
     .card {
-        width: 44%;
-        padding: 75px;
-        font-size: 22px;
+        width: 100%;
+        padding: 98px;
+        font-size: 44px;
+        margin-bottom: 63px;
     }
 
     .card>p {
@@ -695,6 +934,20 @@ button[name="join-club"] {
 
     button[name="join-club"] {
         font-size: 17px;
+    }
+
+    .see-more-div {
+        width: 86%;
+    }
+
+    .see-more-div>a {
+        font-size: 35px;
+    }
+    .membership h2{
+        font-size: 67px;
+    }
+    .membership-cards h2{
+        font-size: 50px;
     }
 }
 
@@ -715,6 +968,16 @@ button[name="join-club"] {
 
     button[name="join-club"] {
         font-size: 17px;
+    }
+
+    .see-more-div {
+        width: 100%;
+    }
+    .membership h2{
+        font-size: 67px;
+    }
+    .membership-cards h2{
+        font-size: 50px;
     }
 }
 
@@ -737,5 +1000,15 @@ button[name="join-club"] {
         font-size: 17px;
     }
 
+    .see-more-div {
+        width: 100%;
+    }
+
+    .membership h2{
+        font-size: 67px;
+    }
+    .membership-cards h2{
+        font-size: 50px;
+    }
 
 }
